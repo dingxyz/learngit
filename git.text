@@ -18,3 +18,20 @@ $ pwd
 把当前目录变为可管理目录
 git init
 
+在 learngit（该仓库） 下创建文件
+
+添加 文件 到git仓库 （该文件必须在当前目录下存在）
+git add readme.txt  （文件名）
+
+提交 文件 到git仓库
+并加上 本次提交的说明：一定要有意义， 方便后期寻找
+git commit -m "wrote a git file"
+
+我第一次修改了
+
+查看哪些文件哪些改动了
+git diff readme.txt  （文件名）
+
+我第二次修改了
+
+
