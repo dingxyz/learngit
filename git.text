@@ -1,0 +1,20 @@
+1. 下载git 并安装
+
+在开始菜单里找到“Git”->“Git Bash”， 打开命令行， 则安装成功
+
+2. 配置名字  邮箱
+$ git config --global user.name "tom tom"
+$ git config --global user.email "abac26363@gmail.com"
+
+创建文件夹
+$ mkdir learngit
+
+进入文件夹
+$ cd learngit
+
+查看当前文件路径
+$ pwd
+
+把当前目录变为可管理目录
+git init
+
