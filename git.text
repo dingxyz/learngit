@@ -20,14 +20,14 @@ git init
 
 在 learngit（该仓库） 下创建文件
 
-添加 文件 到git仓库 （该文件必须在当前目录下存在）
+添加 文件 到git缓存区 （该文件必须在当前目录下存在）
 git add readme.txt  （文件名）
 
 查看状态用的 （看是否有需要修改的）
 git status
 
-提交 文件 到git仓库
-并加上 本次提交的说明：一定要有意义， 方便后期寻找
+提交 缓存区所有文件 到git仓库
+并加上 本次提交的说明：一定要有意义，（不要写中文） 方便后期寻找
 git commit -m "wrote a git file"
 
 我第一次修改了
@@ -42,3 +42,11 @@ git log --pretty=oneline （可以不加后面的参数 更详细）
 
 我第三次修改了
 
+跳到某个版本  （版本号）
+git reset --hard 1094a
+
+查看命令历史
+git reflog
+
+丢弃工作区的修改  不论是否加到缓存区
+git checkout -- file
