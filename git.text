@@ -51,7 +51,7 @@ git checkout -- 文件名
 
 看本地用户主目录（cd ~）下有没有 .ssh目录 目录下有没有id_rsa和id_rsa.pub这两个文件
 没有的话在Windows下打开Git Bash
-ssh-keygen -t rsa -C "邮箱"  然后一路回车
+ssh-keygen -t rsa -C "邮箱"    然后一路回车
 
 第2步：登陆GitHub，打开“Account settings”，“SSH Keys”页面：
 然后，点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容：
@@ -59,17 +59,19 @@ ssh-keygen -t rsa -C "邮箱"  然后一路回车
 本地的仓库与远程关联
 git remote add origin git@github.com:dingxyz/learngit.git
 
+本地库推送到远程  （确定工作区已经提交到本地库了） （第一次提交会问你 输yes）
+git push origin master
 
 
+如果从零开发 更建议先创建远程库 再从远程库克隆
+创建远程库 （下面方框打勾！！！ 有.md文件）
 
+从远程库克隆一个本地库 使用ssh(更快) 或 https
+git clone git@github.com:dignxyz/gitskills.git
 
+切换到master分支：
+$ git switch master
 
-
-
-
-
-
-
-
-
+查看命令（工作区是干净的， 不要让工作区不干净）
+git stash list
 
