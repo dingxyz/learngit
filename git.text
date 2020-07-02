@@ -40,13 +40,36 @@ git diff readme.txt  （文件名）
 显示提交日志
 git log --pretty=oneline （可以不加后面的参数 更详细）
 
-我第三次修改了
-
 跳到某个版本  （版本号）
 git reset --hard 1094a
 
 查看命令历史
 git reflog
 
-丢弃工作区的修改  不论是否加到缓存区
-git checkout -- file
+丢弃工作区的修改或删除 （加到缓存区的不行  需要回退）
+git checkout -- 文件名
+
+看本地用户主目录（cd ~）下有没有 .ssh目录 目录下有没有id_rsa和id_rsa.pub这两个文件
+没有的话在Windows下打开Git Bash
+ssh-keygen -t rsa -C "邮箱"  然后一路回车
+
+第2步：登陆GitHub，打开“Account settings”，“SSH Keys”页面：
+然后，点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容：
+
+本地的仓库与远程关联
+git remote add origin git@github.com:dingxyz/learngit.git
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
