@@ -75,3 +75,5 @@ $ git switch master
 查看命令（工作区是干净的， 不要让工作区不干净）
 git stash list
 
+切换回 master分支, 将分支合并到 master
+
