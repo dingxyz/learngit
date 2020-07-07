@@ -21,7 +21,7 @@ git init
 在 learngit（该仓库） 下创建文件
 
 添加 文件 到git缓存区 （该文件必须在当前目录下存在）
-git add readme.txt  （文件名）
+git add readme.txt  （文件名）    git add . (缓存当前目录下所有文件的提交)
 
 查看状态用的 （看是否有需要修改的）
 git status
@@ -110,5 +110,19 @@ git cherry-pick 4c805e2   (后面是提交时的 版本号)
 
 Bug修复: 隐藏当前工作区  创建bug修复分支  修bug  保存并提交(记住提交的版本号)
           合并bug分支 恢复工作区   想要其他分支的相同bug也修复  需要复制一个特定的提交到当前分支
+
+查看远程仓库信息
+git remote   (追加 -v 可查看 抓取和推送的地址, 如果没有推送权限 就看不到push地址 )
+
+推送本地分支到远程仓库   (bug分支就没必要推到远程了, feature分支是否推到远程,取决于是否和其他伙伴合作开发)
+git push origin master  (主分支要及时与远程同步)
+git push origin dev   (开发分支 也需要与远程同步)
+
+
+
+
+
+
+
 
 
