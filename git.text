@@ -73,6 +73,8 @@ git stash list
 
 2. 创建分支 并 切换到该分支
 $ git checkout -b dev
+    创建并切换分支还可以用
+    $ git switch -c dev
 
 查看当前分支
 git branch
@@ -80,5 +82,5 @@ git branch
 切换回 master分支, 将分支合并到 master
 git merge dev
 
-
+我是分支的内容
 
