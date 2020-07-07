@@ -45,7 +45,7 @@ git reflog
 丢弃工作区的修改或删除 （加到缓存区的不行  需要回退）
 git checkout -- 文件名
 
-看本地用户主目录（cd ~）下有没有 .ssh目录 目录下有没有id_rsa和id_rsa.pub这两个文件
+第1步: 看本地用户主目录（cd ~）下有没有 .ssh目录 目录下有没有id_rsa和id_rsa.pub这两个文件
 没有的话在Windows下打开Git Bash
 ssh-keygen -t rsa -C "邮箱"    然后一路回车
 
