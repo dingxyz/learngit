@@ -83,7 +83,17 @@ git branch
 将分支合并到 master (此时须在 主分支上)
 git merge dev
 
+合并分支的另一种方式 (带--no-ff  带合并信息)
+$ git merge --no-ff -m "merge with no-ff" dev
+
 删除分支
 git branch -d dev
 
-不干了
+查看工作区是否干净
+git status
+
+如果代码冲突 , 应该先解决冲突再 提交
+注意: master应该是非常稳定的, 仅用来发布新版本, 不能在这上面干活
+  每个人都应该在dev分支上干活, 每个人都有自己的分支,时不时合并到dev上
+
+
