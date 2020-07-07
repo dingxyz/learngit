@@ -30,12 +30,8 @@ git status
 并加上 本次提交的说明：一定要有意义，（不要写中文） 方便后期寻找
 git commit -m "wrote a git file"
 
-我第一次修改了
-
 查看哪些文件哪些改动了
 git diff readme.txt  （文件名）
-
-我第二次修改了
 
 显示提交日志
 git log --pretty=oneline （可以不加后面的参数 更详细）
@@ -75,5 +71,14 @@ $ git switch master
 查看命令（工作区是干净的， 不要让工作区不干净）
 git stash list
 
+2. 创建分支 并 切换到该分支
+$ git checkout -b dev
+
+查看当前分支
+git branch
+
 切换回 master分支, 将分支合并到 master
+git merge dev
+
+
 
