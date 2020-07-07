@@ -86,5 +86,3 @@ git merge dev
 删除分支
 git branch -d dev
 
-我在分支内的内容
-分支中的内容
