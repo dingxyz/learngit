@@ -68,19 +68,22 @@ git clone git@github.com:dignxyz/gitskills.git
 切换到master分支：
 $ git switch master
 
+切换分支
+git checkout name  或  git switch name
+
 查看命令（工作区是干净的， 不要让工作区不干净）
 git stash list
 
 2. 创建分支 并 切换到该分支
-$ git checkout -b dev
-    创建并切换分支还可以用
-    $ git switch -c dev
+$ git checkout -b dev  或   $ git switch -c dev
 
 查看当前分支
 git branch
 
-切换回 master分支, 将分支合并到 master
+将分支合并到 master (此时须在 主分支上)
 git merge dev
 
-我是分支的内容
+删除分支
+git branch -d dev
 
+我在分支内的内容
